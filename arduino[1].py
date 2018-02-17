@@ -50,7 +50,7 @@ class Arduino(object):
         self.ser = serial.Serial(self.port, self.baud)
         var = IntVar()
         Radiobutton(self.root, text="Send data", command=self.send_data, variable=var).grid(row=5, column=0)
-        Radiobutton(self.root, text="Send data", command=self.get_data, variable=var).grid(row=5, column=1)
+        Radiobutton(self.root, text="get data", command=self.get_data, variable=var).grid(row=5, column=1)
 
     def send_data(self):
         e1 = Entry(self.root)
